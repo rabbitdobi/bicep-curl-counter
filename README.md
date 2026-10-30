@@ -23,7 +23,7 @@ The provided downloader fetches MediaPipe model weights into `models/`; they are
 3. Perform about five curls. Below 50° enters the curled stage; returning above 150° completes one repetition.
 4. The 25-second session stops automatically and saves a CSV, JSON settings and PNG plot locally. Space/Q stops early; R resets only the preview.
 
-Use `--record` to additionally save the annotated camera video locally. `assignment/开始弯举计数.command` is a macOS double-click launcher that enables local video recording. No personal camera videos are included in this repository.
+Use `--record` to additionally save the annotated camera video locally. `assignment/开始弯举计数.command` is a macOS double-click launcher that enables local video recording. After downloading or cloning, first run `chmod +x assignment/*.command` to allow that launcher to execute. No personal camera videos are included in this repository.
 
 ## Implementation
 
