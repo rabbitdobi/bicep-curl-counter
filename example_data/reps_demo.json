@@ -1,0 +1,12 @@
+{
+  "software_version": 1,
+  "angle_mode": "2D",
+  "arm": "right",
+  "up_angle": 50,
+  "down_angle": 150,
+  "minimum_return_s": 0.3,
+  "frames": 594,
+  "duration_s": 20.266666666666666,
+  "final_reps": 5,
+  "metadata_origin": "Derived from preserved v1 provenance; this is not a new v2 recording."
+}
