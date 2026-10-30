@@ -1,0 +1,12 @@
+# Generated recordings and model weights stay local.
+output/
+models/*.task
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.mp4
+*.mov
+.env
+.env.*

@@ -1,0 +1,11 @@
+# Rep Counter Report
+
+**1. Two thresholds.** I use 50° to enter the curled state and 150° to return to the extended state. The gap prevents small fluctuations from repeatedly switching states. I replayed the demonstration's measured angles using a single 90° threshold: it counted **6**, compared with **5** using 50°/150°. The same 0.3-second return filter was enabled in both replays. This was an offline comparison using real recorded measurements.
+
+**2. 2D or 3D.** My final default uses 2D landmarks multiplied by the frame's width and height before calculating the angle. This avoids distortion from unequal horizontal and vertical scales. I chose 2D after a visibly curled pose measured about 97° in estimated 3D but 44° in 2D. The arm should move in the image plane: curling toward the camera causes foreshortening and unreliable 2D angles. Optional `--3d` mode remains available.
+
+**3. Threshold choice and results.** I retained the starter's 50°/150° values for 2D. In the preserved local recording, five bend-and-extension cycles were counted after initial positioning, with the display advancing from 0 to 5. A movement before the first observed extension is not counted. Measured angles range from **14.1° to 178.9°**. The included CSV and plot cover the same **20.27-second continuous excerpt** of that recording. The camera video remains local. Unavailable landmarks leave blank angles and gaps in the plot. A 0.3-second minimum from the curled stage to extension rejects very short tracking jumps.
+
+**4. Cheating.** Someone could move the upper arm or shoulder while reaching both elbow-angle thresholds. This counter measures elbow movement, not correct exercise form. Monitoring shoulder angle and elbow position relative to the torso could help reject such movements.
+
+**Evidence:** `example_data/reps_demo.csv` and `example_data/reps_demo.png`. These are the preserved October 23 demonstration measurements. Replaying the same angles with version 2 still gives five dual-threshold counts and six single-threshold counts. They are not presented as a newly recorded live version 2 experiment. Video files remain local; the teacher’s updated submission instructions require a GitHub link and a live demonstration rather than a video submission.

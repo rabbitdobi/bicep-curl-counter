@@ -1,0 +1,8 @@
+# Install with:  pip install -r requirements.txt   (inside your virtual environment)
+
+# MediaPipe also installs OpenCV for us (as "opencv-contrib-python"), so
+# do NOT add "opencv-python" here: having both installed breaks "import cv2".
+mediapipe>=0.10.14
+
+# For plotting recorded data (lesson 13)
+matplotlib
